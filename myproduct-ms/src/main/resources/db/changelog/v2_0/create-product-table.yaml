@@ -1,0 +1,71 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-create-myproduct
+      author: Amrah Ibadzada
+      changes:
+        - createTable:
+            tableName: product
+            columns:
+              - column:
+                  name: product_id
+                  type: varchar(255)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: product_name
+                  type: VARCHAR(150)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: description
+                  type: TEXT
+
+              - column:
+                  name: user_name
+                  type: varchar2(255)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: stock
+                  type: INT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: price
+                  type: NUMERIC(10,2)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: category_id
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: updated_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: product
+            baseColumnNames: category_id
+            referencedTableName: category
+            referencedColumnNames: category_id
+            constraintName: fk_product_category
+            onDelete: RESTRICT
+            onUpdate: CASCADE

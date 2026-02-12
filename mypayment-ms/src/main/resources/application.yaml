@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: mypayment-ms
+
+  datasource:
+    url: "jdbc:postgresql://localhost:5456/databasename"
+    username: "defaultuser"
+    password: "defaultpass"
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+    enabled: true
+    database-change-log-table: DATABASECHANGELOG
+    database-change-log-lock-table: DATABASECHANGELOGLOCK
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      retries: 3
+
+    consumer:
+      group-id: payment-ms-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+
+server:
+  port: 8084
+  servlet:
+    context-path: /payment-ms
+
+feign:
+  client:
+    product-service:
+      url: http://localhost:8082/product-ms/user
+
+jwt:
+  access-token:
+    secret: "a-string-secret-at-least-256-bits-long"

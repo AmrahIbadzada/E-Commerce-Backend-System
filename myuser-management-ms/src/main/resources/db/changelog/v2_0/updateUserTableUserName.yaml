@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: update-user-reqName-length
+      author: Amrah Ibadzada
+      changes:
+        - modifyDataType:
+            tableName: users
+            columnName: user_name
+            newDataType: VARCHAR(25)

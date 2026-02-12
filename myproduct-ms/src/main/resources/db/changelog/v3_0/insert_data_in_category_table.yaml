@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-categories
+      author: Amrah Ibadzada
+      changes:
+        - insert:
+            tableName: category
+            columns:
+              - column:
+                  name: category_name
+                  value: "Electronics"
+              - column:
+                  name: category_id
+                  value: "1"
+
+        - insert:
+            tableName: category
+            columns:
+              - column:
+                  name: category_name
+                  value: "Books"
+              - column:
+                  name: category_id
+                  value: "2"
+
+        - insert:
+            tableName: category
+            columns:
+              - column:
+                  name: category_name
+                  value: "Clothing"
+              - column:
+                  name: category_id
+                  value: "3"
+
+        - insert:
+            tableName: category
+            columns:
+              - column:
+                  name: category_name
+                  value: "Home & Kitchen"
+              - column:
+                  name: category_id
+                  value: "4"

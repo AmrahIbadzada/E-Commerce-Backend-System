@@ -1,0 +1,58 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-payment-history-table
+      author: Amrah Ibadzada
+      changes:
+        - createTable:
+            tableName: PAYMENT_HISTORY
+            columns:
+              - column:
+                  name: id
+                  type: VARCHAR(100)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: PRODUCT_ID
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: QUANTITY
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: PRICE
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: ORDER_ID
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: TRUE
+              - column:
+                  name: STATUS
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: AZERICARD_STATUS
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: TRUE
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: updated_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
