@@ -587,7 +587,7 @@ API documentation is available via Swagger UI when services are running:
 | Service | Swagger UI | Description |
 |---------|-----------|-------------|
 | User Management | (http://localhost:8080/user-management-ms/swagger-ui/index.html) | Authentication & user endpoints |
-| Product Service |[ (http://localhost:8082/product-ms/swagger-ui/index.html) | Product & inventory endpoints |
+| Product Service | (http://localhost:8082/product-ms/swagger-ui/index.html) | Product & inventory endpoints |
 | Payment Service | (http://localhost:8084/payment-ms/swagger-ui/index.html) | Payment processing endpoints |
 | Notification Service | (http://localhost:8086/notification-service-ms/swagger-ui/index.html) | Notification endpoints | -- Dependencies disabled
 
