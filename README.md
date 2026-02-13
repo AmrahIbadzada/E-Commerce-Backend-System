@@ -9,11 +9,9 @@ A scalable, production-ready e-commerce backend system built with microservices 
 - [Technology Stack](#-technology-stack)
 - [Getting Started](#-getting-started)
 - [Docker Operations](#-docker-operations)
-- [Service Endpoints](#-service-endpoints)
 - [Configuration](#-configuration)
 - [Development](#-development)
 - [Monitoring](#-monitoring)
-- [Troubleshooting](#-troubleshooting)
 - [API Documentation](#-api-documentation)
 - [Contributing](#-contributing)
 
@@ -166,7 +164,7 @@ Manages all notification delivery across multiple channels.
 - **Mockito** - Mocking and stubbing
 - **Swagger/OpenAPI** - API documentation
 
-## ⚙️ Getting Started
+## ⚙️Getting Started
 
 ### Prerequisites
 
