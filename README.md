@@ -7,7 +7,7 @@ A scalable, production-ready e-commerce backend system built with microservices 
 - [Architecture Overview](#-architecture-overview)
 - [Microservices](#-microservices)
 - [Technology Stack](#-technology-stack)
-- [Getting Started](#-getting-started)
+- [Getting Started](https://github.com/AmrahIbadzada/E-Commerce-Backend-System?tab=readme-ov-file#%EF%B8%8Fgetting-started)
 - [Docker Operations](#-docker-operations)
 - [Configuration](#-configuration)
 - [Development](#-development)
