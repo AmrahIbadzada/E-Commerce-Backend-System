@@ -407,7 +407,7 @@ cd user-management-ms
 ### Local Development Without Docker
 
 **Prerequisites:**
-- Java 17+
+- Java 21+
 - Gradle 7+
 - PostgreSQL or MySQL running locally
 - Kafka and Zookeeper running locally
