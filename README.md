@@ -8,7 +8,7 @@
 
 A scalable, production-ready e-commerce backend system built with microservices architecture, featuring four independent services that communicate through Apache Kafka for event-driven operations. Designed to handle enterprise-level e-commerce operations similar to Amazon or Trendyol.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Architecture Overview](#-architecture-overview)
 - [Microservices](#-microservices)
@@ -23,7 +23,7 @@ A scalable, production-ready e-commerce backend system built with microservices 
 - [API Documentation](#-api-documentation)
 - [Contributing](#-contributing)
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 This platform implements a distributed microservices architecture designed to handle enterprise-level e-commerce operations.
 
@@ -56,14 +56,14 @@ This platform implements a distributed microservices architecture designed to ha
 
 ### Key Features
 
-- ✅ **Event-Driven Architecture** - Asynchronous communication via Apache Kafka
-- ✅ **Scalable Design** - Each service can scale independently
-- ✅ **Fault Tolerance** - Services continue operating if others fail
-- ✅ **Docker Support** - Full containerization with Docker Compose
-- ✅ **Database Versioning** - Liquibase for schema migration and version control
-- ✅ **Production Ready** - Health checks, monitoring, and logging
+- **Event-Driven Architecture** - Asynchronous communication via Apache Kafka
+- **Scalable Design** - Each service can scale independently
+- **Fault Tolerance** - Services continue operating if others fail
+- **Docker Support** - Full containerization with Docker Compose
+- **Database Versioning** - Liquibase for schema migration and version control
+- **Production Ready** - Health checks, monitoring, and logging
 
-## 🔧 Microservices
+## Microservices
 
 ### 1️⃣ User Management Service (`user-management-ms`)
 **Port:** `8080` | **Context Path:** `/user-management-ms`  
@@ -196,7 +196,7 @@ Manages all notification delivery across multiple channels via event-driven arch
 
 **Note:** This service listens to Kafka topics and sends notifications based on incoming events.
 
-## 💻 Technology Stack
+## Technology Stack
 
 ### Core Technologies
 - **Java 21+** - Modern LTS version with enhanced features
@@ -231,7 +231,7 @@ Manages all notification delivery across multiple channels via event-driven arch
 - **Mockito** - Mocking and stubbing
 - **Swagger/OpenAPI** - API documentation
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -509,7 +509,7 @@ docker-compose pull
 docker-compose build
 ```
 
-## 📋 Service Endpoints
+## Service Endpoints
 
 Once running, services are available at:
 
@@ -830,7 +830,7 @@ cd user-management-ms
 ### Local Development Without Docker
 
 **Prerequisites:**
-- Java 17+
+- Java 21+
 - Gradle 7+
 - PostgreSQL or MySQL running locally
 - Kafka and Zookeeper running locally
@@ -913,7 +913,7 @@ docker exec -it product_postgres psql -U defaultuser -d productdb \
   -c "SELECT * FROM DATABASECHANGELOG ORDER BY dateexecuted DESC LIMIT 10;"
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -1121,7 +1121,7 @@ docker system prune -a --volumes
 docker-compose up --build
 ```
 
-## 📝 API Documentation
+## API Documentation
 
 API documentation is available via Swagger UI when services are running:
 
@@ -1141,7 +1141,7 @@ API documentation is available via Swagger UI when services are running:
 
 **Note:** Notification Service primarily consumes Kafka events and may not expose public REST APIs.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -1203,10 +1203,10 @@ This project is licensed under the MIT License - see the https://github.com/Amra
 ## 📈 Project Roadmap
 
 ### Current Status
-- ✅ Core microservices implementation
-- ✅ Docker containerization
-- ✅ Kafka event-driven communication
-- ✅ Basic API documentation
+- Core microservices implementation
+- Docker containerization
+- Kafka event-driven communication
+- Basic API documentation
 
 ### Planned Features
 - [ ] **API Gateway** - Centralized entry point with routing
@@ -1226,7 +1226,7 @@ This project is licensed under the MIT License - see the https://github.com/Amra
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [Spring Boot Documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/)
 - [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
@@ -1241,6 +1241,6 @@ This project is licensed under the MIT License - see the https://github.com/Amra
 
 ---
 
-## 🔖 Keywords
+## Keywords
 
 `microservices` `spring-boot` `java` `kafka` `docker` `e-commerce` `backend` `rest-api` `event-driven` `distributed-systems` `gradle` `zookeeper` `docker-compose` `scalable` `enterprise`
