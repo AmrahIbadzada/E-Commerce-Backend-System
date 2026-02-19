@@ -10,18 +10,19 @@ A scalable, production-ready e-commerce backend system built with microservices 
 
 ## Table of Contents
 
-- [Architecture Overview](#-architecture-overview)
-- [Microservices](#-microservices)
-- [Technology Stack](#-technology-stack)
-- [Getting Started](#-getting-started)
-- [Docker Operations](#-docker-operations)
-- [Service Endpoints](#-service-endpoints)
-- [Configuration](#-configuration)
-- [Development](#-development)
-- [Monitoring](#-monitoring)
-- [Troubleshooting](#-troubleshooting)
-- [API Documentation](#-api-documentation)
-- [Contributing](#-contributing)
+- [Architecture Overview](#architecture-overview)
+- [Microservices](#microservices)
+- [Technology Stack](#technology-stack)
+- [Getting Started](#getting-started)
+- [Docker Operations](#docker-operations)
+- [Service Endpoints](#service-endpoints)
+- [Configuration](#configuration)
+- [Development](#development)
+- [Monitoring](#monitoring)
+- [Troubleshooting](#troubleshooting)
+- [API Documentation](#api-documentation)
+- [Security Best Practices](#security-best-practices)
+- [Contributing](#contributing)
 
 ## Architecture Overview
 
