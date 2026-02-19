@@ -21,7 +21,6 @@ A scalable, production-ready e-commerce backend system built with microservices 
 - [Monitoring](#monitoring)
 - [Troubleshooting](#troubleshooting)
 - [API Documentation](#api-documentation)
-- [Security Best Practices](#security-best-practices)
 - [Contributing](#contributing)
 
 ## Architecture Overview
