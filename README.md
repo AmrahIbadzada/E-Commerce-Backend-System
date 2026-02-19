@@ -551,7 +551,7 @@ curl -X POST http://localhost:8084/payment-ms/api/payments/process \
 # Notification service listens to Kafka topics - no direct API call needed
 ```
 
-##  Service Endpoints
+##   Service Endpoints
 
 Once running, services are available at:
 
