@@ -841,7 +841,7 @@ cd user-management-ms
 3. Update `application-local.yml` with local connection details
 4. Run each service: `./gradlew :service-name:bootRun`
 
-## 📶 Monitoring
+## Monitoring
 
 ### Viewing Container Resources
 
