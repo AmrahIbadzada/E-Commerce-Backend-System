@@ -17,7 +17,7 @@ A scalable, production-ready e-commerce backend system built with microservices 
 - [Docker Operations](#-docker-operations)
 - [Service Endpoints](#service-endpoints)
 - [Configuration](#-configuration)
-- [Development](#-development)
+- [Development](#development)
 - [Monitoring](#monitoring)
 - [Troubleshooting](#troubleshooting)
 - [API Documentation](#api-documentation)
@@ -735,7 +735,7 @@ To modify service configuration:
 2. Modify `application.yml` in each service's `src/main/resources/`
 3. Rebuild services: `docker-compose up --build`
 
-## 📑 Development
+## Development
 
 ### Database Migrations
 
