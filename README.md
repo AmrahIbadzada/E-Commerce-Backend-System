@@ -17,7 +17,7 @@ A scalable, production-ready e-commerce backend system built with microservices 
 - [Docker Operations](#-docker-operations)
 - [Service Endpoints](#service-endpoints)
 - [Configuration](#-configuration)
-- [Development](#development)
+- [Development](#-development)
 - [Monitoring](#monitoring)
 - [Troubleshooting](#troubleshooting)
 - [API Documentation](#api-documentation)
