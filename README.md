@@ -27,32 +27,7 @@ A scalable, production-ready e-commerce backend system built with microservices 
 
 This platform implements a distributed microservices architecture designed to handle enterprise-level e-commerce operations.
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                       API Gateway (Future)                   │
-└────────────┬────────────────────────────────────────────────┘
-             │
-    ┌────────┴─────────┬──────────────┬──────────────┐
-    │                  │              │              │
-┌───▼────────┐    ┌───▼────────┐ ┌──▼─────────┐ ┌──▼──────────┐
-│   User     │    │  Product   │ │  Payment   │ │Notification │
-│Management  │    │  Service   │ │  Service   │ │  Service    │
-│  (MySQL)   │    │(PostgreSQL)│ │(PostgreSQL)│ │(PostgreSQL) │
-│   :8080    │    │   :8082    │ │   :8084    │ │   :8086     │
-└────────────┘    └────────────┘ └──┬─────────┘ └──┬──────────┘
-                                     │              │
-      REST API Only                  └──────┬───────┘
-                                            │
-                                    ┌───────▼────────┐
-                                    │  Apache Kafka  │
-                                    │ :9092 / :29092 │
-                                    └───────┬────────┘
-                                            │
-                                    ┌───────▼────────┐
-                                    │   Zookeeper    │
-                                    │     :2182      │
-                                    └────────────────┘
-```
+![Project Architecture](project-architecture.png)
 
 ### Key Features
 
